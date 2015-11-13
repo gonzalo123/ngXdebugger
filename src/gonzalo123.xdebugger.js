@@ -2,9 +2,9 @@
     "use strict";
 
     angular.module("gonzalo123.xdebugger", ["ngCookies"])
-        .provider("xdebugger", function ($httpProvider) {
+        .provider("xdebugger", ['$httpProvider', function ($httpProvider) {
             var debugKey;
-            
+
             this.$get = function () {
                 return {
                     getDebugKey: function () {
@@ -19,9 +19,9 @@
                     $httpProvider.interceptors.push("xdebuggerCookieInterceptor");
                 }
             };
-        })
+        }])
 
-        .factory("xdebuggerCookieInterceptor", function ($cookieStore, xdebugger) {
+        .factory("xdebuggerCookieInterceptor", ['$cookieStore', 'xdebugger', function ($cookieStore, xdebugger) {
             return {
                 response: function (response) {
                     $cookieStore.put("XDEBUG_SESSION", xdebugger.getDebugKey());
@@ -29,6 +29,6 @@
                     return response;
                 }
             };
-        })
+        }])
     ;
 })();
