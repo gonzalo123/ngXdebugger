@@ -1,0 +1,40 @@
+{
+  "name": "ng-xdebugger",
+  "version": "1.0.0",
+  "authors": [
+    {
+      "name": "Gonzalo Ayuso",
+      "email": "gonzalo123@gmail.com",
+      "homepage": "http://gonzalo123.com"
+    }
+  ],
+  "description": "AngularJS xdebugger provider",
+  "keywords": [
+    "angularjs",
+    "xdebugger"
+  ],
+  "main": [
+    "./dist/gonzalo123.xdebugger.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/gonzalo123/ngXdebugger.git"
+  },
+  "dependencies": {
+    "angular": "~1",
+    "angular-cookies": "~1"
+  },
+  "devDependencies": {
+    "angular-mocks": "~1"
+  },
+  "license": "MIT",
+  "ignore": [
+    ".jshintrc",
+    "**/*.txt",
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
