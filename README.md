@@ -1,6 +1,8 @@
 xdebugger provider for AngularJs
 =================
 
+[![Build Status](https://travis-ci.org/gonzalo123/ngXdebugger.svg?branch=master)](https://travis-ci.org/gonzalo123/ngXdebugger)
+
 AngularJs provider to allow to debug PHP backends with xdebug.
 
 ## Example
