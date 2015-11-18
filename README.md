@@ -10,8 +10,7 @@ AngularJs provider to allow to debug PHP backends with xdebug.
 Configure provider with default user language and some data
 ```js
     .config(function (xdebuggerProvider) {
-            xdebuggerProvider.setKey('PHPSTORM');
-        })
+        xdebuggerProvider.setKey('PHPSTORM');
     })
 ```
 
